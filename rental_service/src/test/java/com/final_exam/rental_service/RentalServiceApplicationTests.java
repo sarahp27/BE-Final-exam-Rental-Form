@@ -60,9 +60,9 @@ class RentalServiceApplicationTests {
 
 	@Test
 	public void getAll() throws Exception {
-		Rental rental1 = new Rental(1L, "civic", "malir", 7493, 7394, LocalDateTime.now(), LocalDateTime.now(), true,
+		Rental rental1 = new Rental(1L,1L, "civic", "malir", "7493", "7394", LocalDateTime.now(), LocalDateTime.now(), true,
 				430, 890);
-		Rental rental2 = new Rental(1L, "civic", "malir", 7493, 7394, LocalDateTime.now(), LocalDateTime.now(), true,
+		Rental rental2 = new Rental(1L,1L, "civic", "malir", "7493", "7394", LocalDateTime.now(), LocalDateTime.now(), true,
 				430, 890);
 
 		List<Rental> expectedRental = new ArrayList<>();
@@ -85,7 +85,7 @@ class RentalServiceApplicationTests {
 
 	@Test
 	public void getCarbyId() throws Exception {
-		Rental rental1 = new Rental(1L, "civic", "malir", 7493, 7394, LocalDateTime.now(), LocalDateTime.now(), true,
+		Rental rental1 = new Rental(1L, 1L,"civic", "malir", "7493", "7394", LocalDateTime.now(), LocalDateTime.now(), true,
 				430, 890);
 		// Rental rental2= new Rental(1L,"civic","malir", 7493,7394,LocalDateTime.now(),
 		// LocalDateTime.now(),true, 430,890);
@@ -110,7 +110,7 @@ class RentalServiceApplicationTests {
 
 	@Test
 	public void postRental() throws Exception{
-		Rental rental1= new Rental(1L,"civic","malir", 7493,7394,LocalDateTime.now(), LocalDateTime.now(),true, 430,890);
+		Rental rental1= new Rental(1L,1L,"civic","malir", "7493","7394",LocalDateTime.now(), LocalDateTime.now(),true, 430,890);
 		// Rental rental2= new Rental(1L,"civic","malir", 7493,7394,LocalDateTime.now(), LocalDateTime.now(),true, 430,890);
 
 		// List<Rental> expectedRental = new ArrayList<>();

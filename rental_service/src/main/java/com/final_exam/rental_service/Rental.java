@@ -22,10 +22,11 @@ public class Rental {
     @GeneratedValue(strategy = GenerationType.AUTO)
     
     public long id;
+    public long car_id;
     public String name;
     public String address;
-    public int phoneNumber;
-    public int driverLicense;
+    public String phoneNumber;
+    public String driverLicense;
     public LocalDateTime pickupTime;
     public LocalDateTime dropoffTime;
     public boolean insurance;
